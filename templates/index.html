@@ -1,0 +1,120 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block body %}
+
+<main>
+  <!-- Header Image -->
+  <div id="header-img" class="container-fluid d-flex align-items-start flex-column" style="background-image: url({% static 'images/header_img_2.png' %})">
+    <div class="site-head container-lg">
+      <div class="row">
+        <div class="col">
+          <a href="#">
+            <img id="site-logo" style="width: 130px;" src="{% static 'images/ballneety_logo_white.png' %}" alt="logo">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="header-content mt-auto container-lg">
+      <div class="row">
+        <div class="col-11 col-md-9 col-lg-7">
+          <h1 class="text-uppercase">Ballneety Stud Farm</h1>
+          <h2 class="text-uppercase">A Legacy for Quality Breeding</h2>
+          <!-- <p>Located in Co. Limerick, Rathmore Stud is renowned for its handling of quality Flat and National Hunt bloodstock</p> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Header Image END -->
+  <!-- Section 1 -->
+  <div class="section-1 container-xl py-5">
+    <div class="row py-lg-5">
+      <!-- Card 1 -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="{% static 'images/graduates_01.png' %}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-uppercase mb-4 ">Stallions</h5>
+            <p class="card-text fs-6 mb-5">World Class Stallions with fabulous breeding lines.</p>
+            <p class="card-link fs-6 text-uppercase mb-2">Read More</p>
+            <div class="card-link-underline text-underline"></div>
+            <a class="stretched-link" href="{% url 'stallions' %}"></a>
+          </div>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="{% static 'images/mares.png' %}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-uppercase mb-4 ">Our Mares</h5>
+            <p class="card-text fs-6 mb-5">Our careful selection of mares is essential to the breeding practices at Ballyneety Stud Farm.</p>
+            <p class="card-link fs-6 text-uppercase mb-2">Read More</p>
+            <div class="card-link-underline text-underline"></div>
+            <a class="stretched-link" href="{% url 'mares' %}"></a>
+          </div>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="{% static 'images/stallions_01.png' %}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-uppercase mb-4 ">Progeny</h5>
+            <p class="card-text fs-6 mb-5">Our Stallions Progeny Record stands for itself.</p>
+            <p class="card-link fs-6 text-uppercase mb-2">Read More</p>
+            <div class="card-link-underline text-underline"></div>
+            <a class="stretched-link" href="{% url 'progeny' %}"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Section 1 END -->
+  <!-- Section 2 -->
+  <div class="section-2 pb-5">
+    <!-- Section 2 Content Container -->
+    <div class="content-container container-xl">
+      <div class="row pb-5">
+        <!-- Card 1 -->
+        <div class="col-md-6 mb-5 mb-lg-0">
+          <div class="card">
+            <img src="{% static 'images/About us_Edited image.jpg' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-subtitle text-uppercase text-muted mb-0">About</p>
+              <h5 class="card-title text-uppercase mb-4 ">Ballneety Stud</h5>
+              <p class="card-text fs-6 mb-5">The history of Ballyneety Stud Farm, its people and its pride.</p>
+              <p class="card-link fs-6 text-uppercase mb-2">Read More</p>
+              <div class="card-link-underline text-underline"></div>
+              <a class="stretched-link" href="{% url 'about_us' %}"></a>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="col-md-6 mb-5 mb-lg-0">
+          <div class="card">
+            <img src="{% static 'images/for_sales_cover.png' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-subtitle text-uppercase text-muted mb-0">Our horses</p>
+              <h5 class="card-title text-uppercase mb-4 ">For Sale</h5>
+              <p class="card-text fs-6 mb-5">View our current selection of top quality horses and foals for sale.</p>
+              <p class="card-link fs-6 text-uppercase mb-2">Read More</p>
+              <div class="card-link-underline text-underline"></div>
+              <a class="stretched-link" href="{% url 'for_sale' %}"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Section 2 Content Container END-->
+  </div>
+  <!-- Section 2 END-->
+
+  <!-- Background-img div -->
+  <div class="container-fluid background-img" style="background-image: url({% static 'images/Footer image.png' %});">
+    <span class="visually-hidden">Banner Image</span>
+  </div>
+  <!-- Background-img div END-->
+</main>
+
+{% endblock %}

@@ -1,0 +1,143 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block body %}
+
+<main>
+  <!-- Header Image -->
+  <div id="header-img" class="container-fluid d-flex align-items-start flex-column" style="background-image: url({% static 'images/progeny/PROGENY _Image 1.jpg' %})">
+    <div class="site-head container-lg">
+      <div class="row">
+        <div class="col">
+          <a href="{% url 'index' %}">
+            <img id="site-logo" style="width: 130px;" src="{% static 'images/ballneety_logo_white.png' %}" alt="logo">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="header-content mt-auto container-lg">
+      <div class="row">
+        <div class="col-11 col-md-9 col-lg-7">
+          <h1 class="text-uppercase">Progeny</h1>
+          <h2 class="text-uppercase">A Legacy for Quality Breeding</h2>
+          <!-- <p>Located in Co. Limerick, Rathmore Stud is renowned for its handling of quality Flat and National Hunt bloodstock</p> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Header Image END -->
+  <!-- Section 1 offset container left -->
+  <div id="butlers_cravat" class="container-offset py-5 px-1 px-md-5 px-xl-0 me-xl-auto my-5">
+    <div class="container-offset-inner ms-auto me-5">
+      <div class="row">
+        <div class="mx-auto col-11">
+          <h3 class="text-title text-center text-uppercase mb-5">Progeny</h3>
+          <p class="text-para fs-5 mb-5">
+            <strong>My O My</strong> is a Holsteiner stallion by Loutano out of Bilda by Silvester.
+            <br><br>
+            Exceptionally well bred, he is a half-brother to the prolific nations cup and grand prix show jumper <strong>Catoki</strong> (1.60m), as well as <strong>Calvano</strong> (1.60m) and <strong>Casco</strong> (1.60m)
+            <br><br>
+            Extremely versatile, and well known for the trainable temperament of his stock, <strong>My O My</strong> is the sire of numerous successful show jumpers and eventers.
+            In eventing especially, several of his progeny has reached international level and most notably in the young rider and junior ranks. <br>
+            Among these are: <br>
+            <strong>TLB IINTERACTIVE</strong><br>
+            Ridden by the Power family, Rachael, Alex and Shane, TLB Interactive represented Ireland in the Junior European championships in 2009. As he moved up through the grades he progressed to the young rider ranks, where he represented
+            Ireland in the European championships in 2010, 2011 and 2012. <br>
+            <strong>ROMEO Z</strong> <br>
+            First produced by British Olympian Sharon Hunt, Romeo Z was later ridden by Alexander Liddle and Kathleen Cross. Well into the advanced ranks, he represented team GB at junior European level on two occasions (2012 and 2013), before
+            taking part in the young rider equivalent in 2014. <br>
+            <strong>TOM BOY</strong><br>
+            Tom Boy has carried his Irish rider Nessa Briody through the levels. The pair were members of Ireland’s European teams at junior level in 2014 and 2015, and were in the young rider squad in 2016 and 2017. Now competing in open company,
+            they ran in CIC4* classes in 2019. <br>
+            <strong>O MY BALLADEER</strong><br>
+            Another four-star performer, the Alison Holden ridden O My Balladeer is one of the most popular horses on the circuit. He completed the long format CCI4* classes at Ballindenisk and Millstreet in 2019, qualifying to compete at five-star
+            level in 2020. <br>
+            <strong>C WHY</strong><br>
+            The British based C Why is another at CCI4-S level. Ridden by Toots Bartlett, he has 48 BE points. <br>
+            <strong>MY O MY SPORTSFIELD</strong><br>
+            Ridden by Paul Donovan and latterly by Italian squad member Alberto Guigni, this gelding is currently competing at CCI2*-L level. <br>
+            <strong>KILLAGS TOUCH OF CLASS.</strong> Ridden by Franke Sassenberg, currently eventing at CCI2-S level. <br>
+            <strong>COOLEY CARNIVAL LADY</strong>. Ridden by British international Charlotte Agnew, this mare is currently competing at CCI2*-L level.
+            <br><br>
+            <strong>OTHERS</strong> currently on the circuit include Troja Queen (Will Furlong) and Love Actually. The latter also won a class at the Royal Windsor Horse Show. <br>
+
+            <strong>SHOW JUMPERS</strong> include: <br>
+
+            <strong>TELL IT LIKE (1.40m)</strong><br>
+            Ridden by Mary Ellen Rice, the grade A Tell It Like competed up to 1.40m level winning 477 SJI points. <br>
+            <strong>BALLYMOUNTAIN CASH CRISIS (1.30m).</strong><br>
+            Ridden by Abigail and Alexandra McGeoghan-Santry and currently by Amy Mitchell, this grade A jumper has a career total of 285 SJI points. <br>
+            <strong>MILLY THE FILLY (1.30m)</strong><br>
+            A grade B jumper, ridden by Jane Kennedy, this mare has been a consistent performer in amateur and open ranks to win 157 JI points. <br>
+            <strong>LIMESTONE DIAMOND (1.30m)</strong><br>
+            Partnered internationally, by British rider Helern Cruden,
+            <strong>MR HISPEC (1.30m)</strong><br>
+            Ridden by Sean Hayden and Francis Connors to win 51 SJI points. <br>
+            <strong>RUSSELTOWN CRYSTAL (1.20m) </strong> <br>
+            Ridden by Christina Kavanagh to win 59 SJI points. <br>
+          </p>
+        </div>
+        <!-- about_us carousel -->
+        <div class="col-12 col-md-10 offset-md-1 col-carousel ">
+          <div id="graduates_carousel" class="carousel slide mx-auto" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="{% static 'images/progeny/PROGENY _Image 1.jpg' %}" class="d-block" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="{% static 'images/progeny/PROGENY _Image 2.jpg' %}" class="d-block" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#graduates_carousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#graduates_carousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <!-- about_us carousel END -->
+      </div>
+    </div>
+  </div>
+  <!-- Section 1 offset container left END -->
+
+  <!-- Section 2 offset container left -->
+  <div id="progeny_2" class="container-offset py-5 px-1 px-md-5 px-xl-0 me-xl-auto my-5">
+    <div class="container-offset-inner ms-auto me-5">
+      <div class="row">
+        <div class="mx-auto col-11">
+          <!-- <h3 class="text-title text-center text-uppercase mb-5">Progeny</h3> -->
+          <p class="text-para fs-5 mb-5">
+            Progeny details for <strong>Butlers Cravat</strong> and <strong>Crafty Call</strong> are coming soon<br><br>
+
+            Other horses that have been bought and produced at Ballyneety stud farm are;<br><br>
+
+            BALLYNEETY ROLY POLY AKA: COOLEY CRIMINAL MIND <br>
+            <a href="http://www.kimberlyseversoneventing.com/cooley-criminal-mind/">http://www.kimberlyseversoneventing.com/cooley-criminal-mind/</a>
+            <br><br>
+            BALLYNEETY ROCKETMAN AKA: HAW ROCKET, BALLYNEETY NO ROCKET <br><br>
+            <a href="http://www.scarteen.net/horses/graduates/ballyneetynorocket/">http://www.scarteen.net/horses/graduates/ballyneetynorocket/</a>
+            <br><br>
+            BALLYNEETY ROAD TO DIVORCE <br>
+            <a href="https://www.sji.ie/Schedule/Search/Animals/Animal-Details/key/ksfOUCuyJiIOaatmwRo_pA%3D%3D">https://www.sji.ie/Schedule/Search/Animals/Animal-Details/key/ksfOUCuyJiIOaatmwRo_pA%3D%3D</a>
+            <br><br>
+            BALLYNEETY DIAMOND <br>
+            <a href="https://www.fei.org/horse/IRL02262/Ballyneety-Diamond">https://www.fei.org/horse/IRL02262/Ballyneety-Diamond</a>
+            <br><br>
+            BALLYNEETY FEARNHILL FIRST. <br>
+            <a href="https://www.britisheventing.com/about/people-and-horses/horse-profiles/BALLYNEETY-MY-FERNHILL-805002">https://www.britisheventing.com/about/people-and-horses/horse-profiles/BALLYNEETY-MY-FERNHILL-805002</a>
+            <br><br>
+            GORTMORE BALLYNEETY <br>
+            <a href="https://www.britisheventing.com/about/people-and-horses/horse-profiles/GORTMORE-BALLYNEETY-98304">https://www.britisheventing.com/about/people-and-horses/horse-profiles/GORTMORE-BALLYNEETY-98304</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Section 2 offset container left END -->
+</main>
+
+{% endblock %}

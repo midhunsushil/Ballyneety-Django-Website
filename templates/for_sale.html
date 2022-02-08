@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block body %}
+
+<main>
+  <!-- Header Image -->
+  <div id="header-img" class="container-fluid d-flex align-items-start flex-column" style="background-image: url({% static 'images/for_sales_cover.png' %})">
+    <div class="site-head container-lg">
+      <div class="row">
+        <div class="col">
+          <a href="{% url 'index' %}">
+            <img id="site-logo" style="width: 130px;" src="{% static 'images/ballneety_logo_white.png' %}" alt="logo">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="header-content mt-auto container-lg">
+      <div class="row">
+        <div class="col-11 col-md-9 col-lg-7">
+          <h1 class="text-uppercase">For Sale</h1>
+          <h2 class="text-uppercase">A Legacy for Quality Breeding</h2>
+          <!-- <p>Located in Co. Limerick, Rathmore Stud is renowned for its handling of quality Flat and National Hunt bloodstock</p> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Header Image END -->
+
+  <!-- Section 2 offset container right -->
+  <div id="foal" class="container-offset py-5 px-1 px-md-5 px-xl-0 ms-xl-auto my-5">
+    <div class="container-offset-inner me-auto">
+      <div class="row">
+        <div class="mx-auto col-11 col-lg-6 order-xl-1">
+          <h3 class="text-title text-center text-uppercase mb-5">Foal</h3>
+          <p class="text-para fs-5">
+            We have a selection of foals for this coming season by
+            <br><br>
+            Butlers Cravat <br>
+            My O My <br>
+            Crafty Call <br>
+          </p>
+        </div>
+        <!-- Foal carousel -->
+        <div class="col-12 col-md-10 offset-md-1 offset-lg-0 col-lg-6 col-carousel ">
+          <div id="foal_carousel" class="carousel slide mx-auto" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="{% static 'images/foal/foal_01.jpg' %}" class="d-block" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="{% static 'images/foal/foal_02.jpg' %}" class="d-block" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="{% static 'images/foal/foal_03.jpeg' %}" class="d-block" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/foal/foal_04.jpeg" class="d-block" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#foal_carousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#foal_carousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <!-- Foal carousel END -->
+      </div>
+    </div>
+  </div>
+  <!-- Section 2 offset container RIGHT END-->
+</main>
+
+{% endblock %}

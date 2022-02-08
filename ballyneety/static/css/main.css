@@ -1,0 +1,447 @@
+#header-img {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* height: 80vh; */
+  height: 143.75vw;
+  position: relative;
+}
+
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+
+.site-head .row {
+  padding: 1.5rem 0;
+}
+
+.header-content {
+  margin-bottom: 15px;
+  font-family: 'Bitter', serif;
+  color: white;
+}
+
+.header-content h1 {
+  font-size: 34px;
+  font-size: 2.125rem;
+}
+
+.header-content h2 {
+  margin-bottom: 24px;
+  font-size: 18px;
+  font-size: 1.125rem;
+}
+
+.header-content p {
+  font-size: 14px;
+  font-size: .875rem;
+}
+
+/* Section 1 */
+.section-1 .card, .section-2 .card {
+  font-family: 'Bitter', serif;
+  color: black;
+  border: none;
+}
+
+.section-1 .card .card-body {
+  padding: 30px 0;
+}
+
+.section-1 .card .card-body h5.card-title, .section-2 .card .card-body h5.card-title {
+  line-height: 1;
+  font-size: 36px;
+  font-size: 2.25rem;
+}
+
+.section-1 .card .card-body p.card-link, .section-2 .card .card-body p.card-link {
+  color: #e9a900;
+  font-family: Inter, sans-serif;
+  letter-spacing: 3px;
+}
+
+.section-1 .card .card-link-underline, .section-2 .card .card-link-underline {
+  border-bottom: 1px solid #e9a900;
+  width: 50px;
+  transition: width 1s;
+}
+
+.section-1 .card:hover .card-link-underline, .section-2 .card:hover .card-link-underline {
+  transition: width 1s;
+  width: 100px;
+}
+
+/* Section 1 END */
+/* Section 2 */
+.section-2 {
+  width: 100%;
+  height: auto;
+  background-color: #f8f8f8;
+}
+
+.section-2 .card .card-body {
+  padding: 20px;
+}
+
+.section-2 .card {
+  height: 100%;
+  background-color: white;
+}
+
+.section-2 .card-img-top {
+  height: 370px;
+  width: 100%;
+  object-fit: cover;
+}
+/* Section 2 END*/
+/* Background-img div */
+.container-fluid.background-img {
+  height: 135vw;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Background-img div END*/
+/* Footer sitemap */
+.site-foot-sitemap {
+  /* background-color: #303030; */
+  background-color: #306844;
+}
+
+.site-foot-sitemap .site-foot-nav a {
+  display: block;
+  font-family: Inter, sans-serif;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+/* Footer sitemap END*/
+/* Footer copyright */
+.site-foot-copyright {
+  background-color: #182c25;
+}
+
+.site-foot-copyright .privacy-links a {
+  border-bottom: 1px solid #009d45;
+  font-size: 12px;
+  font-size: .75rem;
+  font-family: Inter, sans-serif;
+  color: white;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.site-foot-copyright .copyright {
+  font-size: 12px;
+  font-size: .75rem;
+  font-family: Inter, sans-serif;
+  color: white;
+}
+
+/* Footer copyright END */
+/* Stallions Page */
+.container-offset {
+  width: 100%;
+  background-color: #edf6ff;
+}
+
+.container-offset-inner {
+  width: 100%;
+}
+
+.container-offset-inner .text-title {
+  font-size: 36px;
+  font-size: 2.25rem;
+  font-family: 'Bitter', serif;
+  color: black;
+}
+
+.container-offset-inner .text-para {
+  font-family: 'Raleway', sans-serif
+}
+
+.container-offset-inner .text-para {
+  /* text-align: justify;
+  text-justify: inter-word; */
+}
+
+.col-carousel .carousel-item img {
+  width: 100%;
+  height: auto;
+}
+
+/* Stallions Page END*/
+/* Contact Us Form */
+section#contact {
+  background-color: #212529;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+section {
+  padding: 100px 0;
+}
+
+section#contact .section-heading {
+  color: #fff;
+}
+
+section#contact h2.section-heading {
+  font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+section#contact h3.section-subheading {
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
+  margin-bottom: 75px;
+  text-transform: none;
+  font-family: Droid Serif, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+section#contact .text-muted {
+  color: #868e96 !important;
+}
+
+#contact .col-md-6 {
+  padding: 0 15px;
+}
+
+.form-row>.col, .form-row>[class*=col-] {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+section#contact .form-group {
+  margin-bottom: 25px;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+section#contact .form-group textarea.form-control {
+  height: 248px;
+}
+
+section#contact .form-control:focus {
+  border-color: #fed136;
+  box-shadow: none;
+}
+
+section#contact .form-group input, section#contact .form-group textarea {
+  padding: 20px;
+}
+
+.form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #ffeeb5;
+  outline: 0;
+  box-shadow: 0 0 0 .2rem rgba(254, 209, 54, .25);
+}
+
+.form-text {
+  display: block;
+  margin-top: .25rem;
+}
+
+.lead {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+.small, small {
+  font-size: 80%;
+  font-weight: 400;
+}
+
+small {
+  font-size: 80%;
+}
+
+.clearfix:after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.form-row>.col, .form-row>[class*=col-] {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show > .btn-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 .2rem rgba(221,183,52,.5);
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle {
+  color: #212529;
+  background-color: #fec503;
+  border-color: #f3bd01;
+}
+
+.btn:not(:disabled):not(.disabled) {
+  cursor: pointer;
+}
+
+button:focus:not(:focus-visible) {
+  outline: 0;
+}
+
+.btn-primary:active, .btn-primary:focus {
+  box-shadow: 0 0 0 .2rem rgba(254,209,55,.5)!important;
+}
+
+.btn-primary:active, .btn-primary:focus, .btn-primary:hover {
+  background-color: #fec810!important;
+  border-color: #fec810!important;
+  color: #fff;
+}
+
+.btn-primary.focus, .btn-primary:focus {
+  box-shadow: 0 0 0 .2rem rgba(221,183,52,.5);
+}
+
+.btn-primary.focus, .btn-primary:focus, .btn-primary:hover {
+  color: #212529;
+  background-color: #fec810;
+  border-color: #fec503;
+}
+
+/* Contact Us Form END*/
+/* Media min 768px  */
+@media screen and (min-width: 768px) {
+  #header-img {
+    height: 620px;
+    padding-bottom: 0;
+  }
+
+  #site-logo {
+    width: 225px;
+  }
+
+  .header-content {
+    margin-bottom: 25px;
+  }
+
+  .header-content h1 {
+    font-size: 52px;
+    font-size: 3.25rem;
+  }
+
+  .header-content h2 {
+    font-size: 27px;
+    font-size: 1.6875rem;
+  }
+
+  .header-content p {
+    font-size: 18px;
+    font-size: 1.125rem;
+  }
+
+  .section-2 .card .card-body {
+    padding: 45px;
+  }
+
+  .section-2 .card-img-top {
+    height: 220px;
+  }
+
+  .container-fluid.background-img {
+    height: 550px;
+  }
+
+  .col-carousel .carousel-item img {
+    /* width: 500px;
+    height: auto; */
+  }
+
+  section {
+    padding: 150px 0;
+  }
+}
+
+/* Media min 768 END */
+/* Media min 992 */
+@media screen and (min-width: 992px) {
+
+  /* .col-carousel .carousel.slide {
+    margin-bottom: 20px;
+    margin-top: calc();
+  } */
+  .col-carousel .carousel-item img {
+    width: 100%;
+    height: auto;
+  }
+
+  .section-2 .card-img-top {
+    height: 320px;
+  }
+}
+
+/* Media min 992 END */
+/* Media min 1200 */
+@media screen and (min-width: 1200px) {
+  #header-img {
+    height: 820px;
+  }
+
+  #site-logo {
+    width: 250px;
+  }
+
+  .header-content {
+    margin-bottom: 100px;
+  }
+
+  .header-content h1 {
+    font-size: 72px;
+    font-size: 4.5rem;
+  }
+
+  .header-content h2 {
+    font-size: 36px;
+    font-size: 2.25rem;
+  }
+
+  .header-content p {
+    font-size: 22px;
+    font-size: 1.375rem;
+  }
+
+  .section-1.container-xl {
+    /* max-width: 1110px; */
+  }
+
+  .section-2 .content-container {
+    /* max-width: 1110px; */
+  }
+
+  .section-2 .card-img-top {
+    height: 370px;
+  }
+
+  .container-fluid.background-img {
+    height: 600px;
+  }
+
+  /* Stallions Page */
+  .container-offset {
+    width: calc(1080px + (100% - 1080px)/ 2)
+  }
+
+  .container-offset-inner {
+    width: 1080px;
+  }
+}
+
+/* Media min 1200 END */
