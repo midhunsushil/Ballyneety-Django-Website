@@ -1,0 +1,47 @@
+{% extends "manage_content/base.html" %}
+{% load static %}
+
+{% block body %}
+
+<main>
+  <!-- Header Image -->
+  <div id="header-img" class="container-fluid d-flex align-items-start flex-column" style="background-image: url({% static 'images/manage_content.jpg' %})">
+    <div class="site-head container-lg">
+      <div class="row">
+        <div class="col">
+          <a href="{% url 'index' %}">
+            <img id="site-logo" style="width: 130px;" src="{% static 'images/ballneety_logo_white.png' %}" alt="logo">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="header-content mt-auto container-lg">
+      <div class="row">
+        <div class="col-11 col-md-9 col-lg-7">
+          <h1 class="text-uppercase">Manage Content</h1>
+          <h2 class="text-uppercase">Manage images and description of this site's content</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Header Image END -->
+
+  <!-- Edit Post Form -->
+  <section id="contact" style="">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="text-uppercase section-heading">Edit Post</h2>
+          <h3 class="text-muted section-subheading">Lorem ipsum dolor sit amet consectetur.</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Contact Us Form END-->
+</main>
+{% endblock %}

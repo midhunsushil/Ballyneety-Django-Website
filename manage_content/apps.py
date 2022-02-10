@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class ManageImagesConfig(AppConfig):
+class ManageContentConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'manage_images'
+    name = 'manage_content'

@@ -15,10 +15,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.conf.urls.static import static
+from django.conf import settings
 from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('tinymce/', include('tinymce.urls')),
     path('', views.index, name="index"),
     path('about_us/', views.about_us, name="about_us"),
     path('mares/', views.mares, name="mares"),
@@ -26,4 +29,5 @@ urlpatterns = [
     path('progeny/', views.progeny, name="progeny"),
     path('for_sale/', views.for_sale, name="for_sale"),
     path('contact_us/', views.contact_us, name="contact_us"),
-]
+    path('manage-2235/', include('manage_content.urls'), name="manage"),
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) # Delete this during production

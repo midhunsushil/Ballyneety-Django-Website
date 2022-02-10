@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'tinymce',
+    'manage_content'
 ]
 
 MIDDLEWARE = [
@@ -122,7 +124,29 @@ STATICFILES_DIRS = [
     "ballyneety/static"
 ]
 
+# Media files
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR /'media'
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# TinyMCE configuration
+
+TINYMCE_DEFAULT_CONFIG = {
+
+    "theme": "silver",
+    "height": 500,
+    "menubar": False,
+    "plugins": "advlist,autolink,lists,link,image,charmap,print,preview,anchor,"
+    "searchreplace,visualblocks,code,fullscreen,insertdatetime,media,table,paste,"
+    "code,help,wordcount",
+    "toolbar": "undo redo | formatselect | "
+    "bold italic backcolor | alignleft aligncenter "
+    "alignright alignjustify | bullist numlist outdent indent | "
+    "link image media |"
+    "code removeformat preview | help",
+}
