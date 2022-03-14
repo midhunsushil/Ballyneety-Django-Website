@@ -27,34 +27,42 @@
   </div>
   <!-- Header Image END -->
   <!-- Section 1 offset container left -->
-  <div id="butlers_cravat" class="container-offset py-5 px-1 px-md-5 px-xl-0 ms-xl-auto my-5">
+  <div id="{{ post.htmlid }}" class="container-offset py-5 px-1 px-md-5 px-xl-0 ms-xl-auto my-5">
     <div class="container-offset-inner me-auto ms-5">
       <div class="row">
         <div class="mx-auto col-11">
-          <h3 class="text-title text-center text-uppercase mb-5">Our Mares</h3>
-          <p class="text-para fs-5 mb-5">On the subject of genetics, experts agree that while breeding is not an exact science, it is however a key performance indicator. This is a view taken rather seriously at Ballyneety Stud Farm, particularly
-            because of the demands placed upon the modern sporthorse.<br><br>
-
-            The generations of horses bred here have a rich genetic heritage. The breeding lines of performers past like Orange Peel, Cottage Son, Ladykiller, Hyperion, Dark Ronald & St.Simon are all present, as are Nearco & Bold Ruler (Sire of
-            Secretariat !!). There is a “large splash of the Irish “Holy Trinity” of King of Diamonds, Clover Hill & Highland Flight.<br><br>
-
-            Of the 12- 15 mares bred here annually, all of them posess classic lines, infused over the years with the likes of Sunny light, Horos, Warcraft, Errigal Flight, Beneficial, Carnival Night, Rhett Butler, Imperious, Golden Beaker, High
-            Roller, Sky Boy, Master Imp, Hail Station, Cruising, Dancing Brave, & Ballinvella, amongst others.
-          </p>
+          <h3 class="text-title text-center text-uppercase mb-5">
+            {% if not error %}
+            {{ post.title }}
+            {% endif %}
+          </h3>
+          <div class="text-para fs-5 mb-5">
+            {% if error %}
+            {{ error }}
+            {% else %}
+            {{ post.description | safe}}
+            {% endif %}
+          </div>
         </div>
         <!-- about_us carousel -->
         <div class="col-12 col-md-10 offset-md-1 col-carousel ">
-          <div id="about_us_carousel" class="carousel slide mx-auto" data-bs-ride="carousel">
+          <div id="{{ post.htmlid }}_carousel" class="carousel slide mx-auto" data-bs-ride="carousel">
             <div class="carousel-inner">
+              {% for i in post.gallery.all %}
+              {% if forloop.first %}
               <div class="carousel-item active">
-                <img src="{% static 'images/Mares-Section-1024x768.jpeg' %}" class="d-block" alt="...">
+              {% else %}
+              <div class="carousel-item">
+              {% endif %}
+                <img src="{{ i.image.url }}" class="d-block" alt="...">
               </div>
+              {% endfor %}
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#about_us_carousel" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#{{ post.htmlid }}_carousel" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#about_us_carousel" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#{{ post.htmlid }}_carousel" data-bs-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
             </button>
